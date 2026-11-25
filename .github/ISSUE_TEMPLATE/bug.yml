@@ -1,0 +1,32 @@
+name: Bug report
+description: Report reproducible incorrect behavior using sanitized evidence.
+title: "[Bug] "
+labels: ["type:bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "Sirr is currently in planning. Report documentation/tooling defects; do not disclose private vulnerabilities, tokens or real conversation data here."
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Version or commit and relevant environment
+      placeholder: "Commit, OS, browser or tool version; no private hostnames"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized evidence and affected requirement IDs
+      description: Remove credentials, emails, private content and local personal paths.

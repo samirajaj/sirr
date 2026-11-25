@@ -155,3 +155,58 @@ vite.config.ts.timestamp-*
 .nx/cache
 .nx/workspace-data
 .nx/migrate-runs
+
+# Private planning handoffs and conversation context (public decisions live in docs/planning)
+/docs/context/
+
+# Local assistant, editor and operating-system state
+/.codex/
+/.local/
+/.artifacts/
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Credentials, signing keys and local authentication configuration
+/secrets/
+/.aws/
+/.ssh/
+/.docker/config.json
+/.npmrc
+.npmrc.local
+.netrc
+_netrc
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Real runtime data and backups; keep source migrations and synthetic fixtures trackable
+/data/
+/storage/
+/uploads/
+/backups/
+*.dump
+*.backup
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+
+# Local-only Compose overrides and browser test artifacts
+compose.override.yml
+compose.override.yaml
+docker-compose.override.yml
+docker-compose.override.yaml
+playwright-report/
+test-results/
+blob-report/

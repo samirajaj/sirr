@@ -1,0 +1,26 @@
+name: Product or architecture decision
+description: Compare options before changing scope, trust or architecture.
+title: "[Decision] "
+labels: ["type:decision", "needs-triage"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Decision and affected requirements
+      description: Reference an existing DEC ID or explain why a new decision is needed.
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options and trade-offs
+      description: Include privacy, cost, portability, operational and recovery consequences.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence, open questions and proposed next step
+      description: Cite primary sources and distinguish a proposal from an accepted decision.
+    validations:
+      required: true

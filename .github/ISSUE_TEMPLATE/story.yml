@@ -1,0 +1,32 @@
+name: User story
+description: Propose a user outcome with testable acceptance criteria.
+title: "[Story] "
+labels: ["type:story", "needs-triage"]
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: User outcome
+      placeholder: "As a ..., I want ..., so that ..."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance scenarios
+      description: Include successful, failed and unauthorized paths, plus Arabic/English impacts.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and exclusions
+    validations:
+      required: true
+  - type: textarea
+    id: traceability
+    attributes:
+      label: Requirement IDs, epic and dependencies
+      description: Cite PRD/SRS/DEC IDs and existing issues; identify unresolved decisions.
+    validations:
+      required: true

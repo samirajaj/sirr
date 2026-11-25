@@ -1,0 +1,35 @@
+name: Technical or documentation task
+description: Define a bounded deliverable or feasibility experiment.
+title: "[Task] "
+labels: ["type:task", "needs-triage"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Work kind
+      options:
+        - Task
+        - Feasibility spike
+        - Epic proposal
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Problem, scope and deliverable
+      description: For spikes, define a time/resource budget and the question to answer. Maintainers adjust the type label during triage.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria and verification
+      description: Specify observable outputs and meaningful checks; do not prefill passed results.
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Requirement IDs, epic and dependencies
+    validations:
+      required: true
